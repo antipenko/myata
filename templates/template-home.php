@@ -4,23 +4,40 @@
  */
 get_header(); ?>
 
-<div class="row">
-	<!--HOME PAGE SLIDER-->
+<section class="mb-slider">
 	<?php echo home_slider_template(); ?>
-	<!--END of HOME PAGE SLIDER-->
-</div>
+</section>
 
+<section class="mb-menu">
+	<div class="row">
+		<div class="columns medium-6">
+			<ul>
+				<?php
+				$disheArgs = array(
+					'post_type'=>'dishe',
+					'posts_per_page'=>-1
+		// 'orderby'=>'date',
+		// 'order'=>''
+					);
+					$dishe = new WP_Query($disheArgs);?>
+					<?php if($dishe->have_posts()): ?>
+						<?php while($dishe->have_posts()): $dishe->the_post() ?>
+							<li>
+								<?php the_title() ?>
+								<?php the_field('price') ?> грн;
+							</li>
+						<?php endwhile; ?>
+					<?php endif;?>
+				</ul>
+			</div>
 
-<div class="row">
-	<div class="columns">
+			<?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
 
-		<?php if ( have_posts() ) : ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-			   <?php the_content(); ?>
-			<?php endwhile; ?>
-		<?php endif; ?>
-		<i class="fa fa-user"></i>
-	</div>
-</div>
+		</div>
+	</section>
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
