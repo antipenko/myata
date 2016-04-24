@@ -99,8 +99,8 @@
                     background: transparent;
                     padding: 0 15px;
                     &:hover {
-                        color: red;
-                        background: grey;
+                        color: $primary-color;
+                        background: transparent;
                     }
                     &:after { display: none; }
                 }
@@ -110,8 +110,8 @@
             li.current-menu-item > a:not(.button),
             li.current-page-ancestor > a:not(.button) {
                 /* Style of Current page and Ancestor page */
-                color: grey;
-                background: orange;
+                color: green;
+                // background: orange;
             }
             // .has-dropdown {
             //     > a { padding: 0 !important; //make padding equal to your general links }
