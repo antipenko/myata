@@ -99,8 +99,9 @@
                     background: transparent;
                     padding: 0 15px;
                     &:hover {
-                        color: red;
-                        background: grey;
+                        color: #83C229;
+                        background-color: transparent;
+
                     }
                     &:after { display: none; }
                 }
