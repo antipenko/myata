@@ -99,8 +99,14 @@
                     background: transparent;
                     padding: 0 15px;
                     &:hover {
+<<<<<<< HEAD
                         color: $primary-color;
                         background: transparent;
+=======
+                        color: #83C229;
+                        background-color: transparent;
+
+>>>>>>> 2d14ecac7d8e0166849071dbe3938723dc454c15
                     }
                     &:after { display: none; }
                 }

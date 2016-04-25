@@ -117,6 +117,7 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 /* ------------------------------------
     Content Styles
     ------------------------------------- */
+<<<<<<< HEAD
     .mb-slider {
         border-bottom: 2px solid $primary-color;
         position: relative;
@@ -162,6 +163,27 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
             }
         }
     }
+=======
+
+    .mb-slider {
+        border-bottom: 2px solid $primary-color;
+
+        &:before {
+            display: block;
+            content: "The Menu";
+            position: absolute;
+            width: 155px;
+            height: 75px;
+            background-color: $primary-color;
+            top: 86%;
+            left: calc(50% - 78px);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 64px;
+        }
+    }
+
+>>>>>>> 2d14ecac7d8e0166849071dbe3938723dc454c15
 /* -----------------------------------------
     Contact Form
     ----------------------------------------- */
@@ -172,11 +194,19 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     }
 
     .acf-map img {
+<<<<<<< HEAD
      max-width: inherit !important;
  }
 
  /*basic Gravity Form styles and fixes, if you dont need/use this comment or delete styles below*/
  @import "inc/gform";
+=======
+       max-width: inherit !important;
+   }
+
+   /*basic Gravity Form styles and fixes, if you dont need/use this comment or delete styles below*/
+   @import "inc/gform";
+>>>>>>> 2d14ecac7d8e0166849071dbe3938723dc454c15
 
 /* ------------------------------------
     Footer Styles
