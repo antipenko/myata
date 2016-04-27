@@ -36,14 +36,14 @@
 					<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_header_image(); ?>" alt="<?php bloginfo('name'); ?>"/></a>
 				</div><!--end of .logo -->
 			</div><!--end of .columns -->
-			<div class="medium-8 columns right">
-				<nav class="top-bar right" data-topbar="" role="navigation" data-options="{is_hover: false, mobile_show_parent_link: true}">
+			<div class="medium-8 columns">
+				<nav class="top-bar" data-topbar="" role="navigation" data-options="{is_hover: false, mobile_show_parent_link: true}">
 
-					<ul class="title-area right">
+					<ul class="title-area">
 						<li class="name"></li>
 						<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 					</ul><!-- END of .top-bar -->
-					<section class="top-bar-section ">
+					<section class="top-bar-section">
 						<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'fallback_cb' => 'foundation_page_menu', "container" => false, 'walker' => new foundation_navigation() ) ); ?>
 					</section><!-- END of .top-bar-section -->
 				</nav>
